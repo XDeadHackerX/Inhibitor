@@ -25,4 +25,4 @@
 
 ## Versiones
 
-(v1.0) --->   Versión Original
+(v1.0) --->   Versión Original [Todos los Ataques cuentan con modo Seguro para no ser Detectados]
