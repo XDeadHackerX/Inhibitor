@@ -40,7 +40,6 @@ echo "--------------->""      |"
 sleep 1
 echo "--------------------->""|"
 echo "======================="
-sudo airmon-ng stop $interfaz
 sudo ifconfig $interfaz promisc
 sudo airmon-ng start $interfaz
 echo
