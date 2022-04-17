@@ -9,7 +9,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -42,8 +42,9 @@ read -p "[*] Elige una opcion / Choose one option: " opc
 				bash installer.sh
 	esac
 	
-sudo apt install hping3
+sudo apt install hping3	
 sudo apt install aircrack-ng
+sudo apt-get install mdk4
 sudo apt-get install -y netdiscover
 chmod 777 inhibitor.sh
 bash inhibitor.sh
