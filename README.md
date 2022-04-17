@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-[![Inhibitor-1-0.png](https://i.postimg.cc/ZqGn29JY/Inhibitor-1-0.png)](https://postimg.cc/bGRq2wG4)
+[![Inhibitor-1-1.png](https://i.postimg.cc/3R467XXd/Inhibitor-1-1.png)](https://postimg.cc/sQzK4Z0r)
 
 
 ## Instalar Herramienta
