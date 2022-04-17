@@ -9,7 +9,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -17,13 +17,13 @@ echo
 echo
 echo "[5] Relentizar el flujo de datos del Router"
 echo
-read -p " Escribe la Ip de Red (192.168.1.0 o 192.168.0.0): " opc1
+read -p "[*] Escribe la Ip de Red (192.168.1.0 o 192.168.0.0): " opc1
 echo
 sudo route
 echo
 sudo netdiscover -r $opc1/24 -P
 echo
-read -p "Pon la IP del Route (Ej: 192.168.1.1): " ip
+read -p "[*] Pon la IP del Route (Ej: 192.168.1.1): " ip
 clear
 echo
 echo "                           _____           _       _   _       _   _                  "
@@ -33,13 +33,13 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[*] Pulse Ctrl + c (Finalizar Ataque)"
+echo "[#] Pulse Ctrl + c (Finalizar Ataque)"
 echo
 echo "========================================================================================="
 echo "                      El Router ($ip) esta siendo Atacado""                       |"

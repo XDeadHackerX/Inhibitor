@@ -9,7 +9,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -19,8 +19,8 @@ echo "[2] Escaner avanzado Redes Wifi"
 echo 
 sudo airmon-ng
 echo
-read -p "Escribe la Interfaz de la Tarjeta de Red: " interfaz
-read -p "Cortar la salida a internet para evitar futuros errores? (y/n): " opc1
+read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
+read -p "[*] Cortar la salida a internet para evitar futuros errores? (y/n): " opc1
 echo
 if [ $opc1 = y ]
 	then
@@ -42,6 +42,9 @@ echo "--------------------->""|"
 echo "======================="
 sudo ifconfig $interfaz promisc
 sudo airmon-ng start $interfaz
+echo
+read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+echo
 echo "======================="
 echo " Activando Modo Seguro"
 echo "======================="
@@ -54,31 +57,32 @@ sleep 1
 echo "--------------------->""|"
 echo "======================="
 echo
-sudo ifconfig "${interfaz}mon" promisc
-sudo ifconfig "${interfaz}mon" down
-sudo macchanger -a "${interfaz}mon"
-sudo ifconfig "${interfaz}mon" up
+sudo ifconfig $interfaz2 promisc
+sudo ifconfig $interfaz2 down
+sudo macchanger -a $interfaz2
+sudo ifconfig $interfaz2 up
 sleep 2
-sudo airodump-ng "${interfaz}mon"
+sudo airodump-ng $interfaz2 --band abg
 echo
 echo "=============================="
-echo "Desactivando Monitor/Seguridad"
+echo "        Desactivando"
+echo "Ataque/Modo Monitor/Seguridad"
 echo "=============================="
-echo "--->""                  |"
+echo "-------->""                    |"
 sleep 1
-echo "-------->""             |"
+echo "--------------->""             |"
 sleep 1
-echo "--------------->""      |"
+echo "---------------------->""      |"
 sleep 1
-echo "--------------------->""|"
+echo "---------------------------->""|"
 echo "=============================="
 echo
-sudo ifconfig "${interfaz}mon" down
-sudo macchanger -p "${interfaz}mon"
-sudo ifconfig "${interfaz}mon" up
+sudo ifconfig $interfaz2 down
+sudo macchanger -p $interfaz2
+sudo ifconfig $interfaz2 up
 sleep 2
-sudo ifconfig "${interfaz}mon" -promisc
-sudo airmon-ng stop "${interfaz}mon"
+sudo ifconfig $interfaz2 -promisc
+sudo airmon-ng stop $interfaz2
 sudo ifconfig $interfaz -promisc
 sudo systemctl restart NetworkManager.service
 sleep 1
