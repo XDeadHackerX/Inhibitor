@@ -33,6 +33,6 @@
 
 ## Versiones
 
-(v1.0) --->   Versión Original [Todos los Ataques cuentan con modo Seguro para no ser Detectados]
+(v1.0) --->   Versión Original.
 
 (v1.1) --->   Soporte para escaneo de Redes Wifi 5GHz y Ataques a Redes Wifi 5GHz.
