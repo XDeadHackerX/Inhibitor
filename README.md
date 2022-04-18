@@ -29,7 +29,7 @@
 
 [2] Los ataques 4 y 5 cuentan con Modo Seguro haciendo que el Ataque DOS a los dispositivos sean con una IP distinta llegando a utilizar miles de IPs distintas.
 
-[3] Las opciones 2 y 3 y los ataques 6 y 7 cuentas con Modo Seguro haciendo que cambie la MAC de la Tarjeta por una random cada vez que se ejecute una de estas opciones.
+[3] Las opciones 2 y 3 y los ataques 6, 7 y 8 cuentas con Modo Seguro haciendo que cambie la MAC de la Tarjeta por una random cada vez que se ejecute una de estas opciones.
 
 [4] La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
 
