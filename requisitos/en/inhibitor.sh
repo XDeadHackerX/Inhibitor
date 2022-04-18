@@ -31,8 +31,9 @@ echo "                                       Attacks on External Wifi Networks"
 echo "                          ========================================================"
 echo "                          [6] Disconnecting a device from a Wifi Network"
 echo "                          [7] Disconnecting all devices from a Wifi Network"
+echo "                          [8] Disconnect all Wifi Networks from a Channel"
 echo "                                                -----------"
-echo "                          [8] ==================""|""☢ Exit ☢""|""========================"
+echo "                          [9] ==================""|""☢ Exit ☢""|""========================"
 echo "                                                -----------"
 echo
 read -p " [*] Choose one option: " opc
@@ -51,7 +52,9 @@ read -p " [*] Choose one option: " opc
 				;;
 			7 )	bash requisitos/7.sh
 				;;
-			8 )	exit
+			8 )	bash requisitos/8.sh
+				;;
+			9 )	exit
 				;;
 			* )	echo
 				echo "$RRPLY It is not a valid option"
