@@ -9,7 +9,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -31,8 +31,9 @@ echo "                                        Ataques a Redes Wifi Ajenos"
 echo "                          ========================================================"
 echo "                          [6] Desconectar a un disposito de una Red Wifi"
 echo "                          [7] Desconectar a todos los dispositivos de una Red Wifi"
+echo "                          [8] Desconectar a todas las Redes Wifi de un Canal"
 echo "                                                -----------"
-echo "                          [8] ==================""|""☢ Salir ☢""|""======================="
+echo "                          [9] ==================""|""☢ Salir ☢""|""======================="
 echo "                                                -----------"
 echo
 read -p " [*] Elige una opcion: " opc
@@ -51,7 +52,9 @@ read -p " [*] Elige una opcion: " opc
 				;;
 			7 )	bash requisitos/7.sh
 				;;
-			8 )	exit
+			8 )	bash requisitos/8.sh
+				;;
+			9 )	exit
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
