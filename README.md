@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-[![Inhibitor-1-1.png](https://i.postimg.cc/3R467XXd/Inhibitor-1-1.png)](https://postimg.cc/sQzK4Z0r)
+[![Inhibitor-1-2.png](https://i.postimg.cc/25Gfw3L0/Inhibitor-1-2.png)](https://postimg.cc/8F73kpHv)
 
 
 ## Instalar Herramienta
@@ -38,3 +38,5 @@
 (v1.0) --->   Versión Original.
 
 (v1.1) --->   Soporte para escaneos y Ataques a Redes Wifi 5GHz.
+
+(v1.2) --->   Nuevo Apartado (Desconectar a todas las Redes Wifi de un Canal), con este nuevo Ataque podemos Inhibir a todas las Redes Wifi que esten en un mismo Canal y con esto desconectar a todos los dispositivo conectados a estas de forma indefinida.
