@@ -1,4 +1,4 @@
-# Inhibitor
+# 📡 Inhibitor 📡
 
 > Herramienta creada por XDeadHackerX
 
