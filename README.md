@@ -5,7 +5,7 @@
 [![Inhibitor-1-3.png](https://i.postimg.cc/sfNstwF1/Inhibitor-1-3.png)](https://postimg.cc/qgyPKcvd)
 
 
-## Instalar Herramienta
+## 🛠 Instalar Herramienta 🛠
 
 1) sudo apt update && apt -y full-upgrade
 
@@ -23,7 +23,7 @@
 
 8) Ya podemos disfrutar de la herramienta
 
-## Tener en Cuenta
+## 🎲 Tener en Cuenta 🎲
 
 [1] No hace falta poner la Tarjeta en Modo Monitor, las opciones que requieren de este Modo se activan y se desactivan de forma automática.
 
@@ -33,7 +33,7 @@
 
 [4] La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
 
-## Versiones
+## 🔎 Versiones 🔎
 
 (v1.0) --->   Versión Original.
 
