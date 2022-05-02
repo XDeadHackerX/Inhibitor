@@ -43,4 +43,4 @@
 
 (v1.3) --->   Optimización del código, mejoras visuales, solución de errores.
 
-Copyright © 2022, XDeadHackerX
+**Copyright © 2022, XDeadHackerX**
