@@ -17,7 +17,7 @@ echo
 echo
 echo "[5] Relentizar el flujo de datos del Router"
 echo
-read -p "[*] Escribe la Ip de Red (192.168.1.0 o 192.168.0.0): " opc1
+read -p "[*] Escribe la Ip de Red (Ej: 192.168.1.0 o 192.168.0.0): " opc1
 sudo netdiscover -r $opc1/24 -P
 echo
 read -p "[*] Pon la IP del Route (Ej: 192.168.1.1): " ip
