@@ -41,6 +41,6 @@
 
 (v1.2) --->   Nuevo Apartado (Desconectar a todas las Redes Wifi de un Canal), con este nuevo Ataque podemos Inhibir a todas las Redes Wifi que estén en un mismo Canal y con esto desconectar a todos los dispositivos conectados a estas de forma indefinida.
 
-(v1.3) --->   Optimización del código, mejoras visuales, solución de errores.
+(v1.3) --->   Mejora del Apartado [2] Escaner avanzado Rede Wifi, dandote a escoger entre 3 Herramientas para hacer el Escaneo (Aircrack-ng, Bettercap, Wash).Optimización del código, mejoras visuales, solución de errores.
 
 **Copyright © 2022, XDeadHackerX**
