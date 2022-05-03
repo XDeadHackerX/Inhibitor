@@ -46,6 +46,7 @@ sudo apt install hping3
 sudo apt install aircrack-ng
 sudo apt-get install mdk4
 sudo apt-get install gnome-terminal
+sudo apt-get install bettercap
 sudo apt-get install -y netdiscover
 chmod 777 inhibitor.sh
 bash inhibitor.sh
