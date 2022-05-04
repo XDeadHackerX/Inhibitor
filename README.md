@@ -43,7 +43,7 @@
 
 (v1.3) --->   Mejoras en el Apartado ([2] Escáner avanzado Redes Wifi), dándote a escoger entre 3 Herramientas para hacer el Escaneo (Aircrack-ng, Bettercap, Wash). Optimización del código, mejoras visuales, solución de errores.
 
-### 🥷 Creado por XDeadHackerX 🥷
+## ⭐☕ Creado por XDeadHackerX ☕⭐
 
 **Si consideras que este proyecto ha sido útil, te agradecería que me apoyaras dándole una estrella a este repo o invitándome a un café.**
 
