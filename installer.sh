@@ -48,5 +48,6 @@ sudo apt-get install mdk4 -y
 sudo apt-get install gnome-terminal -y
 sudo apt-get install bettercap -y
 sudo apt-get install -y netdiscover-y
+sudo apt install macchanger -y 
 chmod 777 inhibitor.sh -y
 bash inhibitor.sh
