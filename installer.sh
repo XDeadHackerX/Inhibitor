@@ -42,11 +42,11 @@ read -p "[*] Elige una opcion / Choose one option: " opc
 				bash installer.sh
 	esac
 	
-sudo apt install hping3	
-sudo apt install aircrack-ng
-sudo apt-get install mdk4
-sudo apt-get install gnome-terminal
-sudo apt-get install bettercap
-sudo apt-get install -y netdiscover
-chmod 777 inhibitor.sh
+sudo apt install hping3	-y
+sudo apt install aircrack-ng -y
+sudo apt-get install mdk4 -y
+sudo apt-get install gnome-terminal -y
+sudo apt-get install bettercap -y
+sudo apt-get install -y netdiscover-y
+chmod 777 inhibitor.sh -y
 bash inhibitor.sh
